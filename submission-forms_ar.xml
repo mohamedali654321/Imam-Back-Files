@@ -58,7 +58,7 @@
          <repeatable>true</repeatable>
          <label>المؤلف </label>
          <input-type>name</input-type>
-         <hint>أدخل اسم مؤلف هذه المادة أدناه.</hint>
+         <hint>أدخل اسم مؤلف هذه المادة أعلاه.</hint>
          <required></required>
 	</field>
 	</row>
@@ -72,7 +72,7 @@
          <repeatable>true</repeatable>
          <label>المؤلفون المشاركون</label>
          <input-type>name</input-type>
-         <hint>أدخل اسم المؤلفون المشاركون لهذه المادة أدناه.</hint>
+         <hint>أدخل اسم المؤلفون المشاركون لهذه المادة أعلاه.</hint>
          <required></required>
        </field>
 	</row>
@@ -178,7 +178,7 @@
          <repeatable>false</repeatable>
          <label>تاريخ النشر</label>
          <input-type>date</input-type>
-        <hint>يرجى تقديم تاريخ النشر السابق أو التوزيع العام أدناه. يمكنك ترك اليوم و / أو الشهر إذا لم يكن متاحاً.</hint>
+        <hint>يرجى تقديم تاريخ النشر السابق أو التوزيع العام أعلاه. يمكنك ترك اليوم و / أو الشهر إذا لم يكن متاحاً.</hint>
          <required>يجب عليك إدخال السنة على الأقل.</required>
        </field>
 	</row>
@@ -191,7 +191,7 @@
          <repeatable>true</repeatable>
          <label>المٌعَرفات</label>
          <input-type value-pairs-name="common_identifiers">qualdrop_value</input-type>
-         <hint>إذا كانت المادة تحتوي على أي معرفات تعريف أو أكواد مرتبطة به ، يرجى إدخال الأنواع والأرقام أو الرموز الفعلية أدناه.</hint>
+         <hint>إذا كانت المادة تحتوي على أي معرفات تعريف أو أكواد مرتبطة به ، يرجى إدخال الأنواع والأرقام أو الرموز الفعلية أعلاه.</hint>
          <required></required>
        </field>
 	</row>
@@ -205,7 +205,7 @@
          <repeatable>false</repeatable>
          <label>اللغة</label>
          <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
-         <hint>حدد لغة المحتوى الرئيسي للمادة. إذا لم تظهر اللغة في القائمة أدناه ، يرجى تحديد "أخرى". إذا كان المحتوى لا يحتوي على لغة بالفعل (على سبيل المثال ، إذا كان عبارة عن مجموعة بيانات أو صورة) ، فيرجى تحديد "غير متاح".</hint>
+         <hint>حدد لغة المحتوى الرئيسي للمادة. إذا لم تظهر اللغة في القائمة أعلاه ، يرجى تحديد "أخرى". إذا كان المحتوى لا يحتوي على لغة بالفعل (على سبيل المثال ، إذا كان عبارة عن مجموعة بيانات أو صورة) ، فيرجى تحديد "غير متاح".</hint>
          <required></required>
        </field>
 	</row>
@@ -521,7 +521,7 @@
          <repeatable>false</repeatable>
          <label>نوع الوثيقة</label>
          <input-type  value-pairs-name="common_types">dropdown</input-type>
-         <hint>مضغوطاً واختر نوع المادة.</hint>
+         <hint> اختر نوع المادة.</hint>
          <required></required>
        
 	</field>
@@ -751,6 +751,11 @@
        
 	</field>
 	</row> -->
+
+
+
+
+
 <row>
      <field>
                      <dc-schema>dc</dc-schema>
@@ -765,15 +770,31 @@
 
                 </row>
 
+
+
+            <row>
+
+             <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>format</dc-element>
+                    <dc-qualifier>numberoflines</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>عدد السطور</label>
+                    <input-type>onebox</input-type>
+                    <hint>أدخل عدد سطور المخطوط.</hint>
+                    <required></required>
+                </field>
+            </row>
+
        <row>
 	<field>
          <dc-schema>dc</dc-schema>
          <dc-element>description</dc-element>
          <dc-qualifier></dc-qualifier>
          <repeatable>true</repeatable>
-         <label>الوصف المادي للرسالة الجامعية </label>
+         <label>تبصرات وملاحظات عن الرسالة الجامعية</label>
          <input-type>textarea</input-type>
-         <hint>أدخل الوصف المادي للمادة أعلاه. </hint>
+         <hint>أدخل  تبصرات وملاحظات عن الرسالة الجامعية  أعلاه. </hint>
          <required></required>
        
 	</field>
@@ -791,7 +812,7 @@
          <label>المعرّفات </label>
          <input-type value-pairs-name="thesis_identifiers">qualdrop_value</input-type>
          <hint>إذا كان للمادة أرقام أو رموز تعريف مرتبطة بها
-, يرجى إدخال الأنواع والأرقام أو الرموز الفعلية أدناه.</hint>
+, يرجى إدخال الأنواع والأرقام أو الرموز الفعلية أعلاه.</hint>
          <required></required>
 	</field>
 	</row>
@@ -856,7 +877,7 @@
                     <label>تاريخ النشر الميلادي </label>
                     <style>col-sm-6</style>
                     <input-type>date</input-type>
-                    <hint>يرجى تقديم تاريخ النشر السابق أو التوزيع العام أدناه. يمكنك ترك اليوم و / أو الشهر إذا لم تكن قابلة للتطبيق.
+                    <hint>يرجى تقديم تاريخ النشر السابق أو التوزيع العام أعلاه. يمكنك ترك اليوم و / أو الشهر إذا لم تكن قابلة للتطبيق.
                     </hint>
                     <required></required>
                 </field>
@@ -870,7 +891,7 @@
          <label> تاريخ النشر الهجري</label>
          <style>col-sm-6</style>
          <input-type>date</input-type>
-         <hint>الرجاءتقديم تاريخ الهجري للتوزيع العام أو النشر السابق 
+         <hint>يرجى تقديم تاريخ الهجري للتوزيع العام أو النشر السابق 
 أعلاه. يمكنك التغاضي عن اليوم و/أو الشهر إذا لم يكونا
 معروفين.</hint>
          <required>يجب ادخال تاريخ النشر الهجري</required>
@@ -976,7 +997,7 @@
                     <label>تاريخ النشر الميلادي </label>
                     <style>col-sm-6</style>
                     <input-type>date</input-type>
-                    <hint>يرجى تقديم تاريخ النشر السابق أو التوزيع العام أدناه. يمكنك ترك اليوم و / أو الشهر إذا لم تكن قابلة للتطبيق.
+                    <hint>يرجى تقديم تاريخ النشر السابق أو التوزيع العام أعلاه. يمكنك ترك اليوم و / أو الشهر إذا لم تكن قابلة للتطبيق.
                     </hint>
                     <required>يجب ادخال تاريخ النشر الميلادي</required>
                 </field>
@@ -1357,7 +1378,7 @@
                     <label>المُعرِفات</label>
                     <input-type value-pairs-name="common_identifiers">qualdrop_value</input-type>
                     <hint>إذا كان للمادة أ{قام أو رموز تعريف مرتبطة بها
-, يرجى إدخال الأنواع والأرقام أو الرموز الفعلية أدناه.</hint>
+, يرجى إدخال الأنواع والأرقام أو الرموز الفعلية أعلاه.</hint>
          <required></required>
                 </field>
             </row>
@@ -1802,7 +1823,7 @@
                     <repeatable>true</repeatable>
                     <label>المُعرِفات</label>
                     <input-type value-pairs-name="common_identifiers">qualdrop_value</input-type>
-                    <hint>إذا كان للمادة أ{قام أو رموز تعريف مرتبطة بها , يرجى إدخال الأنواع والأرقام أو الرموز الفعلية أدناه.
+                    <hint>إذا كان للمادة أ{قام أو رموز تعريف مرتبطة بها , يرجى إدخال الأنواع والأرقام أو الرموز الفعلية أعلاه.
                     </hint>
                     <required></required>
                 </field>
@@ -3001,7 +3022,7 @@
          <repeatable>false</repeatable>
          <label>تاريخ البدء الميلادي</label>
          <input-type>date</input-type>
-        <hint>يرجى تقديم تاريخ البدء  أدناه. يمكنك ترك اليوم و / أو الشهر إذا لم يكن متاحاً.</hint>
+        <hint>يرجى تقديم تاريخ البدء  أعلاه. يمكنك ترك اليوم و / أو الشهر إذا لم يكن متاحاً.</hint>
          <required>يجب عليك إدخال السنة على الأقل.</required>
        </field>
 	</row>
@@ -3015,7 +3036,7 @@
          <repeatable>false</repeatable>
          <label>تاريخ البدء الهجري</label>
          <input-type>onebox</input-type>
-        <hint>يرجى تقديم تاريخ البدء الهجري أدناه. .</hint>
+        <hint>يرجى تقديم تاريخ البدء الهجري أعلاه. .</hint>
         
        </field>
 	</row>
@@ -3028,7 +3049,7 @@
          <repeatable>false</repeatable>
          <label>تاريخ الإنتهاء الميلادي</label>
          <input-type>date</input-type>
-        <hint>يرجى تقديم تاريخ الإنتهاء  أدناه. يمكنك ترك اليوم و / أو الشهر إذا لم يكن متاحاً.</hint>
+        <hint>يرجى تقديم تاريخ الإنتهاء  أعلاه. يمكنك ترك اليوم و / أو الشهر إذا لم يكن متاحاً.</hint>
          <required>يجب عليك إدخال السنة على الأقل.</required>
        </field>
 	</row>
@@ -3041,7 +3062,7 @@
          <repeatable>false</repeatable>
          <label>تاريخ الإنتهاء الهجري</label>
          <input-type>onebox</input-type>
-        <hint>يرجى تقديم تاريخ الإنتهاء الهجري أدناه .</hint>
+        <hint>يرجى تقديم تاريخ الإنتهاء الهجري أعلاه .</hint>
          
        </field>
 	</row>
@@ -3480,7 +3501,7 @@
          <repeatable>false</repeatable>
          <label>تاريخ البدء الميلادي</label>
          <input-type>date</input-type>
-        <hint>يرجى تقديم تاريخ البدء  أدناه. يمكنك ترك اليوم و / أو الشهر إذا لم يكن متاحاً.</hint>
+        <hint>يرجى تقديم تاريخ البدء  أعلاه. يمكنك ترك اليوم و / أو الشهر إذا لم يكن متاحاً.</hint>
          <required>يجب عليك إدخال السنة على الأقل.</required>
        </field>
 	</row>
@@ -3494,7 +3515,7 @@
          <repeatable>false</repeatable>
          <label>تاريخ البدء الهجري</label>
          <input-type>onebox</input-type>
-        <hint>يرجى تقديم تاريخ البدء الهجري أدناه. .</hint>
+        <hint>يرجى تقديم تاريخ البدء الهجري أعلاه. .</hint>
         
        </field>
 	</row>
@@ -3509,7 +3530,7 @@
          <repeatable>false</repeatable>
          <label>تاريخ الإنتهاء الميلادي</label>
          <input-type>date</input-type>
-        <hint>يرجى تقديم تاريخ الإنتهاء  أدناه. يمكنك ترك اليوم و / أو الشهر إذا لم يكن متاحاً.</hint>
+        <hint>يرجى تقديم تاريخ الإنتهاء  أعلاه. يمكنك ترك اليوم و / أو الشهر إذا لم يكن متاحاً.</hint>
          <required>يجب عليك إدخال السنة على الأقل.</required>
        </field>
 	</row>
@@ -3523,7 +3544,7 @@
          <repeatable>false</repeatable>
          <label>تاريخ الإنتهاء الهجري</label>
          <input-type>onebox</input-type>
-        <hint>يرجى تقديم تاريخ الإنتهاء الهجري أدناه .</hint>
+        <hint>يرجى تقديم تاريخ الإنتهاء الهجري أعلاه .</hint>
          
        </field>
 	</row>
@@ -3574,7 +3595,7 @@
          <repeatable>false</repeatable>
          <label>اللغة</label>
          <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
-         <hint>حدد لغة المحتوى الرئيسي للحدث. إذا لم تظهر اللغة في القائمة أدناه ، يرجى تحديد "أخرى". إذا كان المحتوى لا يحتوي على لغة بالفعل (على سبيل المثال ، إذا كان عبارة عن مجموعة بيانات أو صورة) ، فيرجى تحديد "غير متاح".</hint>
+         <hint>حدد لغة المحتوى الرئيسي للحدث. إذا لم تظهر اللغة في القائمة أعلاه ، يرجى تحديد "أخرى". إذا كان المحتوى لا يحتوي على لغة بالفعل (على سبيل المثال ، إذا كان عبارة عن مجموعة بيانات أو صورة) ، فيرجى تحديد "غير متاح".</hint>
          <required></required>
        </field>
 	</row>
@@ -4040,7 +4061,7 @@
          <repeatable>false</repeatable>
          <label>تاريخ البدء الميلادي</label>
          <input-type>date</input-type>
-        <hint>يرجى تقديم تاريخ البدء  أدناه. يمكنك ترك اليوم و / أو الشهر إذا لم يكن متاحاً.</hint>
+        <hint>يرجى تقديم تاريخ البدء  أعلاه. يمكنك ترك اليوم و / أو الشهر إذا لم يكن متاحاً.</hint>
         
        </field>
 	</row>
@@ -4054,7 +4075,7 @@
          <repeatable>false</repeatable>
          <label>تاريخ البدء الهجري</label>
          <input-type>onebox</input-type>
-        <hint>يرجى تقديم تاريخ البدء الهجري أدناه. .</hint>
+        <hint>يرجى تقديم تاريخ البدء الهجري أعلاه. .</hint>
         
        </field>
 	</row>
@@ -4069,7 +4090,7 @@
          <repeatable>false</repeatable>
          <label>تاريخ الإنتهاء الميلادي</label>
          <input-type>date</input-type>
-        <hint>يرجى تقديم تاريخ الإنتهاء  أدناه. يمكنك ترك اليوم و / أو الشهر إذا لم يكن متاحاً.</hint>
+        <hint>يرجى تقديم تاريخ الإنتهاء  أعلاه. يمكنك ترك اليوم و / أو الشهر إذا لم يكن متاحاً.</hint>
          <required>يجب عليك إدخال السنة على الأقل.</required>
        </field>
 	</row>
@@ -4083,7 +4104,7 @@
          <repeatable>false</repeatable>
          <label>تاريخ الإنتهاء الهجري</label>
          <input-type>onebox</input-type>
-        <hint>يرجى تقديم تاريخ الإنتهاء الهجري أدناه .</hint>
+        <hint>يرجى تقديم تاريخ الإنتهاء الهجري أعلاه .</hint>
          
        </field>
 	</row>
@@ -4134,7 +4155,7 @@
          <repeatable>false</repeatable>
          <label>اللغة</label>
          <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
-         <hint>حدد لغة المحتوى الرئيسي للحدث. إذا لم تظهر اللغة في القائمة أدناه ، يرجى تحديد "أخرى". إذا كان المحتوى لا يحتوي على لغة بالفعل (على سبيل المثال ، إذا كان عبارة عن مجموعة بيانات أو صورة) ، فيرجى تحديد "غير متاح".</hint>
+         <hint>حدد لغة المحتوى الرئيسي للحدث. إذا لم تظهر اللغة في القائمة أعلاه ، يرجى تحديد "أخرى". إذا كان المحتوى لا يحتوي على لغة بالفعل (على سبيل المثال ، إذا كان عبارة عن مجموعة بيانات أو صورة) ، فيرجى تحديد "غير متاح".</hint>
          <required></required>
        </field>
 	</row>
@@ -4456,7 +4477,7 @@
          <repeatable>false</repeatable>
          <label>تاريخ البدء الميلادي</label>
          <input-type>date</input-type>
-        <hint>يرجى تقديم تاريخ البدء  أدناه. يمكنك ترك اليوم و / أو الشهر إذا لم يكن متاحاً.</hint>
+        <hint>يرجى تقديم تاريخ البدء  أعلاه. يمكنك ترك اليوم و / أو الشهر إذا لم يكن متاحاً.</hint>
         
        </field>
 	</row>
@@ -4470,7 +4491,7 @@
          <repeatable>false</repeatable>
          <label>تاريخ البدء الهجري</label>
          <input-type>onebox</input-type>
-        <hint>يرجى تقديم تاريخ البدء الهجري أدناه. .</hint>
+        <hint>يرجى تقديم تاريخ البدء الهجري أعلاه. .</hint>
         
        </field>
 	</row>
@@ -4485,7 +4506,7 @@
          <repeatable>false</repeatable>
          <label>تاريخ الإنتهاء الميلادي</label>
          <input-type>date</input-type>
-        <hint>يرجى تقديم تاريخ الإنتهاء  أدناه. يمكنك ترك اليوم و / أو الشهر إذا لم يكن متاحاً.</hint>
+        <hint>يرجى تقديم تاريخ الإنتهاء  أعلاه. يمكنك ترك اليوم و / أو الشهر إذا لم يكن متاحاً.</hint>
          <required></required>
        </field>
 	</row>
@@ -4499,7 +4520,7 @@
          <repeatable>false</repeatable>
          <label>تاريخ الإنتهاء الهجري</label>
          <input-type>onebox</input-type>
-        <hint>يرجى تقديم تاريخ الإنتهاء الهجري أدناه .</hint>
+        <hint>يرجى تقديم تاريخ الإنتهاء الهجري أعلاه .</hint>
          
        </field>
 	</row>
@@ -4974,7 +4995,7 @@
                     <label>تاريخ النشر </label>
                     <style>col-sm-4</style>
                     <input-type>date</input-type>
-                    <hint>يرجى تقديم تاريخ النشر السابق أو التوزيع العام أدناه. يمكنك ترك اليوم و / أو الشهر إذا لم تكن قابلة للتطبيق.
+                    <hint>يرجى تقديم تاريخ النشر السابق أو التوزيع العام أعلاه. يمكنك ترك اليوم و / أو الشهر إذا لم تكن قابلة للتطبيق.
                     </hint>
                     <required></required>
                 </field>
@@ -4987,7 +5008,7 @@
                     <label>مكان النشر </label>
                     <style>col-sm-8</style>
                     <input-type>onebox</input-type>
-                    <hint>أدخل اسم مكان نشر هذه المخطوط.</hint>
+                    <hint>أدخل اسم مكان نشر هذا المخطوط.</hint>
                     <required></required>
                 </field>
             </row>
@@ -5003,7 +5024,7 @@
          <repeatable>false</repeatable>
          <label>اللغة</label>
          <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
-         <hint>حدد لغة المحتوى الرئيسي للسلسلة. إذا لم تظهر اللغة في القائمة أدناه ، يرجى تحديد "أخرى". إذا كان المحتوى لا يحتوي على لغة بالفعل (على سبيل المثال ، إذا كان عبارة عن مجموعة بيانات أو صورة) ، فيرجى تحديد "غير متاح".</hint>
+         <hint>حدد لغة المحتوى الرئيسي للسلسلة. إذا لم تظهر اللغة في القائمة أعلاه ، يرجى تحديد "أخرى". إذا كان المحتوى لا يحتوي على لغة بالفعل (على سبيل المثال ، إذا كان عبارة عن مجموعة بيانات أو صورة) ، فيرجى تحديد "غير متاح".</hint>
          <required></required>
        </field>
 	</row>
@@ -5333,7 +5354,7 @@
          <repeatable>false</repeatable>
          <label>تاريخ البدء</label>
          <input-type>date</input-type>
-        <hint>يرجى تقديم تاريخ البدء  أدناه. يمكنك ترك اليوم و / أو الشهر إذا لم يكن متاحاً.</hint>
+        <hint>يرجى تقديم تاريخ البدء  أعلاه. يمكنك ترك اليوم و / أو الشهر إذا لم يكن متاحاً.</hint>
          <required>يجب عليك إدخال السنة على الأقل.</required>
        </field>
 	</row>
@@ -5347,7 +5368,7 @@
          <repeatable>false</repeatable>
          <label>تاريخ الإنتهاء</label>
          <input-type>date</input-type>
-        <hint>يرجى تقديم تاريخ الإنتهاء  أدناه. يمكنك ترك اليوم و / أو الشهر إذا لم يكن متاحاً.</hint>
+        <hint>يرجى تقديم تاريخ الإنتهاء  أعلاه. يمكنك ترك اليوم و / أو الشهر إذا لم يكن متاحاً.</hint>
          <required>يجب عليك إدخال السنة على الأقل.</required>
        </field>
 	</row>
@@ -6524,9 +6545,9 @@
                     <dc-element>format</dc-element>
                     <dc-qualifier>imageorientation</dc-qualifier>
                     <repeatable>false</repeatable>
-                    <label>إتجاه الصورة</label>
+                    <label>اتجاه الصورة</label>
                     <input-type value-pairs-name="imageorientation_types">dropdown</input-type>
-                    <hint>حدد إتجاه الصورة إن وجدت.</hint>
+                    <hint>حدد اتجاه الصورة إن وجدت.</hint>
                     <required></required>
                 </field>
             </row>
@@ -6815,7 +6836,7 @@
                     <repeatable>true</repeatable>
                     <label>المُعرِفات</label>
                     <input-type value-pairs-name="common_identifiers">qualdrop_value</input-type>
-                    <hint>إذا كان للمادة أ{قام أو رموز تعريف مرتبطة بها , يرجى إدخال الأنواع والأرقام أو الرموز الفعلية أدناه.
+                    <hint>إذا كان للمادة أ{قام أو رموز تعريف مرتبطة بها , يرجى إدخال الأنواع والأرقام أو الرموز الفعلية أعلاه.
                     </hint>
                     <required></required>
 		</field>
@@ -7173,7 +7194,7 @@
                     <repeatable>true</repeatable>
                     <label>المُعرِفات</label>
                     <input-type value-pairs-name="common_identifiers">qualdrop_value</input-type>
-                    <hint>إذا كان للمادة أ{قام أو رموز تعريف مرتبطة بها , يرجى إدخال الأنواع والأرقام أو الرموز الفعلية أدناه.
+                    <hint>إذا كان للمادة أ{قام أو رموز تعريف مرتبطة بها , يرجى إدخال الأنواع والأرقام أو الرموز الفعلية أعلاه.
                     </hint>
                     <required></required>
 		</field>
@@ -8414,7 +8435,7 @@
                     <label>تاريخ النشر الميلادي </label>
                     <style>col-sm-6</style>
                     <input-type>date</input-type>
-                    <hint>يرجى تقديم تاريخ النشر السابق أو التوزيع العام أدناه. يمكنك ترك اليوم و / أو الشهر إذا لم تكن قابلة للتطبيق.
+                    <hint>يرجى تقديم تاريخ النشر السابق أو التوزيع العام أعلاه. يمكنك ترك اليوم و / أو الشهر إذا لم تكن قابلة للتطبيق.
                     </hint>
                     <required></required>
                 </field>
@@ -8549,7 +8570,7 @@
          <repeatable>false</repeatable>
          <label>اللغة</label>
          <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
-         <hint>حدد لغة المحتوى الرئيسي للمادة. إذا لم تظهر اللغة في القائمة أدناه ، يرجى تحديد "أخرى". إذا كان المحتوى لا يحتوي على لغة بالفعل (على سبيل المثال ، إذا كان عبارة عن مجموعة بيانات أو صورة) ، فيرجى تحديد "غير متاح".</hint>
+         <hint>حدد لغة المحتوى الرئيسي للمادة. إذا لم تظهر اللغة في القائمة أعلاه ، يرجى تحديد "أخرى". إذا كان المحتوى لا يحتوي على لغة بالفعل (على سبيل المثال ، إذا كان عبارة عن مجموعة بيانات أو صورة) ، فيرجى تحديد "غير متاح".</hint>
          <required></required>
        </field>
 	</row>
@@ -9258,7 +9279,7 @@
                  <repeatable>true</repeatable>
                  <label> اسم الناسخ </label>
                  <input-type>name</input-type>
-                 <hint> أدخل اسم ناسخ هذه المخطوط أدناه.</hint>
+                 <hint> أدخل اسم ناسخ هذا المخطوط أعلاه.</hint>
                  <required></required>
                
                  </field>
@@ -9350,7 +9371,7 @@
                      <repeatable>true</repeatable>
                      <label>المٌعَرفات</label>
                      <input-type value-pairs-name="common_identifiers">qualdrop_value</input-type>
-                     <hint>إذا كان المخطوط يحتوي على أي معرفات تعريف أو أكواد مرتبطة به ، يرجى إدخال الأنواع والأرقام أو الرموز الفعلية أدناه.</hint>
+                     <hint>إذا كان المخطوط يحتوي على أي معرفات تعريف أو أكواد مرتبطة به ، يرجى إدخال الأنواع والأرقام أو الرموز الفعلية أعلاه.</hint>
                      <required></required>
                    </field>
                 </row>
@@ -9467,7 +9488,7 @@
                              <repeatable>false</repeatable>
                              <label>نوع الوثيقة</label>
                              <input-type  value-pairs-name="common_types">dropdown</input-type>
-                             <hint>مضغوطاً واختر نوع المادة.</hint>
+                             <hint> اختر نوع المادة.</hint>
                              <required></required>
                            
                         </field>
@@ -9483,7 +9504,7 @@
                                  <repeatable>true</repeatable>
                                  <label>اللغة</label>
                                  <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
-                                 <hint>حدد لغة المحتوى الرئيسي المخطوط. إذا لم تظهر اللغة في القائمة أدناه ، يرجى تحديد "أخرى". إذا كان المحتوى لا يحتوي على لغة بالفعل (على سبيل المثال ، إذا كان عبارة عن مجموعة بيانات أو صورة) ، فيرجى تحديد "غير متاح".</hint>
+                                 <hint>حدد لغة المحتوى الرئيسي (مخطوط). إذا لم تظهر اللغة في القائمة أعلاه ، يرجى تحديد "أخرى". إذا كان المحتوى لا يحتوي على لغة بالفعل (على سبيل المثال ، إذا كان عبارة عن مجموعة بيانات أو صورة) ، فيرجى تحديد "غير متاح".</hint>
                                  <required></required>
                                </field>
                             </row>
@@ -9556,9 +9577,9 @@
          <dc-element>format</dc-element>
          <dc-qualifier>medium</dc-qualifier>
          <repeatable>false</repeatable>
-         <label>نوع المخطوط </label>
+         <label>نوع وعاء المخطوط </label>
          <input-type value-pairs-name="manuscript_types">dropdown</input-type>
-         <hint>حدد نوع المخطوط.</hint>
+         <hint>حدد نوع وعاء المخطوط.</hint>
          <required></required>
        </field>
 	</row>
@@ -9588,7 +9609,7 @@
          <repeatable>false</repeatable>
          <label>الأمور العلمية</label>
          <input-type value-pairs-name="scientificMatters_types">dropdown</input-type>
-         <hint>ذا كان المخطوط بها أي أمور علمية ، فيرجى إدخال الأنواع أدناه.</hint>
+         <hint>إذا كان المخطوط به أي أمور علمية ، فيرجى إدخال الأنواع أعلاه.</hint>
          <required></required>
        </field>
 	</row>
@@ -9603,7 +9624,7 @@
          <repeatable>true</repeatable>
          <label>الآفات </label>
          <input-type value-pairs-name="pests_types">dropdown</input-type>
-         <hint>إذا كان المخطوط بها أي آفات ، يرجى إدخال الأنواع أدناه.</hint>
+         <hint>إذا كان المخطوط به أي آفات ، يرجى إدخال الأنواع أعلاه.</hint>
          <required></required>
        </field>
 	</row>
@@ -9619,7 +9640,7 @@
          <repeatable>true</repeatable>
          <label>الأمور الفنية </label>
          <input-type value-pairs-name="technicalMatters_types">dropdown</input-type>
-         <hint>إذا كان المخطوط بها أي أمور فنية ، فيرجى إدخال الأنواع أدناه.</hint>
+         <hint>إذا كان المخطوط به أي أمور فنية ، فيرجى إدخال الأنواع أعلاه.</hint>
          <required></required>
        </field>
 	</row>
@@ -9776,9 +9797,9 @@
                     <dc-element>description</dc-element>
                     <dc-qualifier>underlining</dc-qualifier>
                     <repeatable>false</repeatable>
-                    <label>التسطير</label>
+                    <label>شكل التسطير</label>
                     <input-type>onebox</input-type>
-                    <hint>أدخل تسطير المخطوط.</hint>
+                    <hint>أدخل شكل التسطير المخطوط.</hint>
                     <required></required>
                 </field>
             </row>
@@ -9792,9 +9813,9 @@
                    <dc-element>format</dc-element>
                    <dc-qualifier>puncturing</dc-qualifier>
                     <repeatable>false</repeatable>
-                    <label>التخريم</label>
+                    <label>شكل التخريم</label>
                     <input-type>onebox</input-type>
-                    <hint>أدخل تخريم المخطوط.</hint>
+                    <hint>أدخل شكل التخريم المخطوط.</hint>
                     <required></required>
                 </field>
 
@@ -9980,7 +10001,7 @@
             </row>
 
 
-            <row>
+            <!-- <row>
                 <relation-field>
                     <relationship-type>isActivityOfPublication</relationship-type>
                     <search-configuration>activity</search-configuration>
@@ -9992,11 +10013,9 @@
                         <dc-element>childTitle</dc-element>
                         <dc-qualifier></dc-qualifier>
                         <input-type>onebox</input-type>
-                    </linked-metadata-field>
-                    <!--<externalsources>pubmed</externalsources>-->
-                    
+                    </linked-metadata-field>                    
                 </relation-field>
-            </row>
+            </row> -->
 
 
 
@@ -10163,8 +10182,8 @@
 
          <value-pairs value-pairs-name="digitalformat_types" dc-term="type">
             <pair>
-                <displayed-value>مقروء</displayed-value>
-                <stored-value>Readable | مقروء</stored-value>
+                <displayed-value>نصي</displayed-value>
+                <stored-value>Textual | نصي</stored-value>
             </pair>
 
              <pair>

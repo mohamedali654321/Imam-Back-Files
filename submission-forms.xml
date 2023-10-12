@@ -740,7 +740,19 @@ it, please enter the types and the actual numbers or codes below.</hint>
 
                 </row>   
 
-
+         <row>
+    
+                 <field>
+                        <dc-schema>dc</dc-schema>
+                        <dc-element>format</dc-element>
+                        <dc-qualifier>numberoflines</dc-qualifier>
+                        <repeatable>false</repeatable>
+                        <label>No. of lines </label>
+                        <input-type>onebox</input-type>
+                        <hint>Enter Number of lines of manuscript.</hint>
+                        <required></required>
+                    </field>
+                </row>
        <!-- <row>
 	<field>
          <dc-schema>dc</dc-schema>
@@ -763,9 +775,9 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <dc-element>description</dc-element>
          <dc-qualifier></dc-qualifier>
          <repeatable>true</repeatable>
-         <label>Physical description of the university thesis</label>
+         <label>Insights and notes about the university dissertation</label>
          <input-type>textarea</input-type>
-         <hint>Enter the physical description of the above item. </hint>
+         <hint>Enter the insights and notes about the university dissertation of the above item. </hint>
          <required></required>
        
 	</field>
@@ -10133,7 +10145,7 @@ known.</hint>
             </row>
 
 
-            <row>
+            <!-- <row>
                 <relation-field>
                     <relationship-type>isActivityOfPublication</relationship-type>
                     <search-configuration>activity</search-configuration>
@@ -10145,11 +10157,9 @@ known.</hint>
                         <dc-element>childTitle</dc-element>
                         <dc-qualifier></dc-qualifier>
                         <input-type>onebox</input-type>
-                    </linked-metadata-field>
-                    <!--<externalsources>pubmed</externalsources>-->
-                    
+                    </linked-metadata-field>                    
                 </relation-field>
-            </row>
+            </row> -->
 
 
 
@@ -12513,8 +12523,8 @@ known.</hint>
 
  <value-pairs value-pairs-name="digitalformat_types" dc-term="type">
             <pair>
-                <displayed-value>Readable</displayed-value>
-                <stored-value>Readable | مقروء</stored-value>
+                <displayed-value>Textual</displayed-value>
+                <stored-value>Textual | نصي</stored-value>
             </pair>
 
              <pair>
