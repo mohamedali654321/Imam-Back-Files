@@ -6,3 +6,8 @@ Approved | مجاز
 Study | دراسة
 Manuscript | مخطوطة
 Article | مقال
+
+
+/dspace/bin/dspace initialize-entities -f /dspace/config/entities/relationship-types.xml
+
+(/dspace/bin/dspace index-discovery -b > /mnt/output_index_disc.log 2>&1 &)
