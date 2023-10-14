@@ -2725,4 +2725,10 @@ ds-listable-object-component-loader .card-title {
     .clamp-default-3 .content:after{
       background: none !important;
     }
+
+    @media (min-width:340px) and (max-width:573px){
+      ds-top-section .row{
+        display: block !important;
+      }
+    }
    }
