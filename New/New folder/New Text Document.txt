@@ -1,0 +1,19 @@
+'search.filters.applied.f.member':'أعضاء لجنة المناقشة والتحكيم',
+"form.create": "إنشاء",
+"nav.user-profile-menu-and-logout": "قائمة ملف تعريف المستخدم وتسجيل الخروج",
+
+
+'search.filters.applied.f.member':'Members of the discussion and arbitration committee',
+ "form.create": "Create",
+
+  "nav.user-profile-menu-and-logout": "User profile menu and Log Out",
+
+    ::ng-deep html[dir="rtl"] {
+      .ngb-dp-day, .ngb-dp-weekday, .ngb-dp-week-number {
+        width: 3.4rem ; 
+      }
+      .form-control{
+        padding-bottom: 0 !important;
+      }
+    }
+
