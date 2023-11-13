@@ -1,0 +1,263 @@
+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
+
+
+97.74.91.89
+admindspace     اسم المستخدم الخاص بالـ SSH هو : 
+
+
+dc.description.primaryContactAddress  
+
+technicalContactAddress
+ZsQZiLs#7kGG
+
+ لمجلة أهلاً وسهلاً 
+
+ahlan_wasahlan
+
+https://us02web.zoom.us/j/85418816404#success
+
+
+pg_dump -U dspace7_6_db dspace7_6_db > /mnt/ahlan_wasahlan_26_08_2023.sql
+
+
+psql -U dspace7_6_db -d ahlan_wasahlan_76_db_test < /mnt/ahlan_wasahlan_26_08_2023.sql
+
+rest:
+  ssl: false
+  host: 97.74.91.89
+  port: 7077
+  # NOTE: Space is capitalized because 'namespace' is a reserved string in TypeScript
+  nameSpace: /server
+
+
+52.209.97.70   Kware_New
+
+54.74.233.107     TaibhUni
+
+52.209.192.143    emam_dspace
+
+54.220.211.123       kwareServer
+
+10.200.19.15   nu-serverDS
+
+95.177.179.51   SDL_dspace_server
+
+mohamedali654321
+
+ALTER USER postgres WITH PASSWORD 'Kingbio@2023#';
+docker build \
+  --build-arg NODE_ENV=development \
+  -t strapi_app \ 
+  -f Dockerfile .
+
+ pg_dump -U dspace74 dspace7_4_test_db > /mnt/dspace7_4_test_db_31_01_2023.sql
+
+ pg_dump -U dspace7_6_db dspace76_new > /mnt/dspace76_db_19_07_2023.sql
+
+
+psql -U dspace -d dspace76 < C:\dspace76_db_19_07_2023.sql
+dspace76_new
+
+pg_dump -U dspace7_4_test_db dspacedemo_75 > /mnt/dspacedemo_75_15_05_2023.sql
+
+pg_restore -d dspacedemo_75_new /mnt/dspacedemo_75_new.sql
+
+psql -d dspace7_5_db_new -f dspace7_5_db_new.sql
+
+psql -U postgres postgres /mnt/dspace75_demo_new.sql
+
+psql -U dspace7_5_db -d dspace75_new < /home/admin/dspace75_new.sql
+
+<!-- kware-edit kwareTranslatePipe -->
+
+<!-- kware-edit end  -->
+
+pg_dump -U dspace7_5_db_new dspace75_new > /mnt/dspace75_new_20_05_2023.sql
+
+pg_dump -U dspace76_db dspace76_db > /mnt/dspace76_db_09_07_2023.sql
+
+
+pg_dump -h localhost -U dspace7_6_db -p 5432 -C -t metadatafieldregistry dspace76_new | psql -U dspace76_db -h localhost -p 5432 dspace76_db
+
+
+M
+
+pg dump 
+
+submission.sections.describe.relationship-lookup.title.isEventOfPlace
+submission.sections.describe.relationship-lookup.search-tab.tab-title.isEventOfPlace
+
+
+isSubOrgUnitOfPublication
+
+
+<ds-related-items
+      [parentItem]="object"
+      [relationType]="'isPublicationOfSubOrgUnit'"
+      [label]="'relationships.isPublicationOf' | translate">
+    </ds-related-items>
+
+
+="5}jZe-*g8v+]S
+
+/dspace/bin/dspace initialize-entities -f /dspace/config/entities/relationship-types.xml
+
+
+/dspace/bin/dspace community-filiator -r 4451b642-f0da-4f83-b0a9-897378cd118b -c bd7f632d-dfa5-4a40-bb6d-50fa6c468098
+
+
+
+/dspace/bin/dspace community-filiator --remove --parent=b84f2f44-affc-41ea-9ef0-c4397086bfd8 --child=58eefc43-fbfe-49f1-bb1b-5ff785ef8eda
+
+
+/dspace/bin/dspace community-filiator --set --parent=bcdcbb13-df9c-4cf2-855b-fa7081dc9185  --child=58eefc43-fbfe-49f1-bb1b-5ff785ef8eda
+
+
+/dspace/bin/dspace filter-media -f -i
+
+
+digitalDocumentSpecificationsStep
+
+<step id="digitalDocumentSpecificationsStep"/>
+
+
+
+
+
+Administration_alternative
+
+<entry key="event.childTitle" value-ref="Orgunit_alternative"/>
+
+
+ <entry key="place.childLegalName" value-ref="Place_alternative"/>
+
+ <entry key="series.name" value-ref="series_alternative"/>
+
+pg_dump -U dspace7_5_db dspace75_new > /mnt/dspace7_6_db_24_06_2023.sql
+
+
+
+psql -U dspace7_4_db -d imam76_db_test < /mnt/imamdb76_teting_10_08_2023.sql
+
+
+create user dspace7_4_db with password 'dspace7_4_db';
+
+grant all privileges on database imam76_db_test to dspace7_4_db;
+
+
+(/dspace/bin/dspace index-discovery -b > /mnt/output_index_disc.log 2>&1 &)
+<ref bean="searchFilterPerson" />
+
+
+(/dspace/bin/dspace index-discovery -b > /mnt/output_index_king.log 2>&1 &)
+
+searchFiltertakephoto
+10.82409
+DataCite User: PVOJ                 Kware@2022#
+
+
+
+INSERT INTO metadatafieldregistry (metadata_field_id,metadata_schema_id,element) VALUES (1,2,firstname);
+
+
+
+db.url = jdbc:postgresql://52.209.97.70:5432/dspace7_6_db
+
+# Database username and password
+db.username = dspace7_6_db
+db.password = dspace7_6_db
+
+# Database Schema name
+db.schema = public
+
+
+
+<!-- kware start edit -- issue.7.6.001
+
+ -->
+.
+.
+.
+<!-- kware end edit -- issue.7.6.001 -->
+
+
+
+
+Arabic | العربية
+
+Manuscript | مخطوطة
+
+
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+
+margin-right: -1px !important;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+margin-left: -1px;
+position: relative;
+    flex: 1 1 auto;
+    width: 1%;
+    min-width: 0;
+    margin-bottom: 0;
+display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+
+
+dc.format.heightDimension
+dc.format.widthDimension
+
+                    <label>(الطول) القياس و الأبعاد</label>
+
+
+
+
+pg_dump -U kware_demo_76_db kware_demo_76_db > /mnt/kware_demo_db_76_09_11_2023.sql
+
+psql -U dspace7_4_test_db -d dspace_demo_76 > /mnt/dspace76_demo_30_09_2023.sql
+
+
+
+
+db.url = jdbc:postgresql://52.209.192.143:5432/dspace_demo_76
+
+# Database username and password
+db.username = dspace7_4_test_db
+db.password = dspace7_4_test_db
+
+
+
+
+
+demo 7.6
+http://52.209.192.143:4007/home
+email:dspace@kwaretech.com
+pass:kware-demo
+
+
+
+
+
+
+
+
+
+
+
+
+
+dc.identifier.depositenumber
+
