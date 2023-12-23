@@ -1,3 +1,5 @@
+// kware start edit -- issue.7.6.001
+
 // @import '../../node_modules/viewerjs/dist/viewer.css';
 ::ng-deep .video-js {
   width: inherit !important;
@@ -27,32 +29,6 @@
   text-align: right;
   font-family: cufi;
 }
-
-::ng-deep  body {
-  background-image: url(../assets/images/background.jpg);
-    margin: 0;
-    background-size: contain;
-}
-::ng-deep header a {
-  color: #fff !important;
-}
-::ng-deep h1{
-  color: #ab986c;
-}
-::ng-deep h2{
-  color: #ab986c;
-}
-::ng-deep h3{
-  color: #ab986c;
-}
-// ::ng-deep h4{
-//   color: #ab986c;
-// }
-::ng-deep h5{
-  color: #ab986c;
-}
-
-
 // margin close sign in header modal to left of export , new or edit  (community , collection , item ) in arabic interface
 ::ng-deep html[dir="rtl"] .modal-header {
   .close {
@@ -318,18 +294,6 @@
   border-bottom-right-radius: 0;
 }
 
-::ng-deep .list-group-item {
-  z-index: 2;
-  color: #ab986c;
-  background-color: #fff;
-  border-color: #ab986c;
-}
-::ng-deep .list-group-item.active {
-  z-index: 2;
-  color: #fff;
-  background-color: #ab986c;
-  border-color: #ab986c;
-}
 // space between Add btn and save ,discard btn in edit-metadat page
 ::ng-deep html[dir="rtl"] {
   ds-item-metadata {
@@ -349,51 +313,51 @@
 // general css
 ::ng-deep {
   body {
-    color: #3992a4 !important;
+    color:  #2666ab !important;
 
 
   }
   .btn-primary {
     color: #fff;
-    background-color: #ab986c !important;
-    border-color: #ab986c!important;
+    background-color:  #2666ab !important;
+    border-color:  #2666ab !important;
   }
   .input-group > .form-control {
-    border: 1px solid #3992a4;
+    border: 1px solid  #2666ab;
   }
   .dropdown-menu > .dropdown-item {
-    color: #ab986c;
+    color:  #2666ab;
     background-color: transparent;
     &.active {
       color: #fff;
       text-decoration: none;
-      background-color: #ab986c;
+      background-color:  #2666ab;
     }
   }
 
   ds-navbar > nav.navbar {
-    border-bottom: 5px #ab986c solid !important;
+    border-bottom: 5px  #2666ab solid !important;
   }
 
   .page-item.active .page-link {
-    background-color: #3992a4 !important;
-    border-color: #3992a4 !important;
+    background-color:  #2666ab !important;
+    border-color:  #2666ab !important;
   }
 
   form > a {
-    color: #3992a4 !important;
+    color:  #2666ab !important;
     text-decoration: none;
     background-color: transparent;
   }
 
   ds-community-list-element > a {
-    color: #3992a4 !important;
+    color:  #2666ab !important;
     text-decoration: none;
     background-color: transparent;
   }
 
   ds-item-search-result-list-element > ds-truncatable > div > a {
-    color: #3992a4 !important;
+    color:  #2666ab !important;
     text-decoration: none;
     background-color: transparent;
   }
@@ -413,11 +377,11 @@
   }
 
   .badge-info {
-    background-color: lighten(#ab986c, 15%) !important;
+    background-color: lighten( #2666ab, 15%) !important;
   }
 
   .btn-outline-primary {
-    color: lighten(#ab986c, 15%) !important;
+    color: lighten( #2666ab, 15%) !important;
     &:hover {
       color: #fff !important;
     }
@@ -426,7 +390,7 @@
   .btn-outline-primary.disabled,
   .btn-outline-primary:disabled {
     &:hover {
-      color: #ab986c !important;
+      color:  #2666ab !important;
     }
   }
 
@@ -437,22 +401,106 @@
    ds-collection-grid-element  .card{
       box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
       &:hover{
-          transform: scale(1.04)
+          transform: scale(1.04);
+          .user-buttons .btn{
+            visibility: visible ;
+
+          }
       }
       transition: .5s;
   }
   ds-community-grid-element .card{
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
     &:hover{
-        transform: scale(1.04)
+        transform: scale(1.04);
+        .user-buttons .btn{
+          visibility: visible ;
+
+        }
     }
     transition: .5s;
+}
+ds-person-search-result-grid-element .card{
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  &:hover{
+      transform: scale(1.04);
+      .user-buttons .btn{
+        visibility: visible ;
+
+      }
+  }
+  transition: .5s;
+}
+
+::ng-deep div.card{
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  &:hover{
+      
+      .user-buttons .btn{
+        visibility: visible !important ;
+
+      }
+  }
+  transition: .5s;
+}
+
+::ng-deep ds-org-unit-search-result-grid-element .card{
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  &:hover{
+      transform: scale(1.04);
+      .user-buttons .btn{
+        visibility: visible ;
+
+      }
+  }
+  transition: .5s;
+}
+
+ds-collection-grid-element .card{
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  &:hover{
+      transform: scale(1.04);
+      .user-buttons .btn{
+        visibility: visible ;
+
+      }
+  }
+  transition: .5s;
+}
+
+
+ds-community-grid-element .card{
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  &:hover{
+      transform: scale(1.04);
+      .user-buttons .btn{
+        visibility: visible ;
+
+      }
+  }
+  transition: .5s;
+}
+
+ds-sub-org-unit-search-result-grid-element .card{
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  &:hover{
+      transform: scale(1.04);
+      .user-buttons .btn{
+        visibility: visible ;
+
+      }
+  }
+  transition: .5s;
 }
 
 ds-item-search-result-grid-element .card{
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
   &:hover{
-      transform: scale(1.04)
+      transform: scale(1.04);
+      .user-buttons .btn{
+        visibility: visible ;
+
+      }
   }
   transition: .5s;
 }
@@ -926,9 +974,9 @@ h4{
     }
 
 
-  // ::ng-deep .card:hover{
-  //     border: #3992a4 1.5px solid;
-  //   }
+  ::ng-deep .card:hover{
+      border:  #2666ab 1.5px solid;
+    }
 
 
 
@@ -961,29 +1009,15 @@ h4{
 
     margin-top: 30px;
   }
- ::ng-deep ds-user-menu
-{
-a{color: #207698 !important;}
-}
+
+
 
 
   ::ng-deep ds-root main{
-     margin-top: 144px !important;
-   }
-
-  @media screen and (max-width:768px){
-    ::ng-deep ds-root main{
-      margin-top: 145px !important;
-   }
- 
-  }
-  ::ng-deep ds-metadata-field-wrapper .simple-view-element-header{
-    color: #ab986c;
+     margin-top: 80px !important;
   }
 
-  ::ng-deep ds-item-page-title-field .item-page-title-field{
-    color: #ab986c;
-  }
+
 
  ::ng-deep html[dir="ltr"] {
   .atss-left {
@@ -1351,37 +1385,6 @@ gap: 7px;
 // }
 
 
-::ng-deep ds-themed-navbar {ds-link-menu-item{
-  .nav-item{
-    color: #fff !important;
-  }
-}
-}
-
-
-
-
-::ng-deep .filter-name{
- color: #207698 !important;
- h5{
-  color: #207698 !important;
- }
-}
-
-
-::ng-deep ds-expandable-navbar-section{
-  ul{
-    background-color: #ab986c !important;
-  }
-}
-
-
-
-::ng-deep .btn-secondary{
-i{color:#fff !important; }
-}
-
-
 
 ::ng-deep{
 
@@ -1390,7 +1393,7 @@ i{color:#fff !important; }
 
 
   .attribution {
-      color: #428bca;
+      color:  #2666ab;
       text-decoration: none;
   }
   .mr-auto, .mx-auto {
@@ -1435,11 +1438,11 @@ i{color:#fff !important; }
   .rights-statement-button {
 
       color: #680da8;
-      // background: transparent;
+      background: #f1f1ee;
       // color: #fff;
-      // background: #428bca;
+      // background:  #2666ab;
       border-radius: 0.25rem;
-      // padding: 0.38rem 0.625rem;
+      padding: 0.38rem 0.625rem;
       font-size: .875rem;
       transition: .3s ease-in-out;
       overflow: hidden;
@@ -1507,13 +1510,24 @@ i{color:#fff !important; }
 
 
   ::ng-deep .pdfbtn{
-     color: #207698 !important;
+     color:  #2666ab !important;
     cursor: pointer;
 
   }
-::ng-deep ds-comcol-page-handle{
-a{color: #207698!important;}
-}
+
+  ::ng-deep .pdfbtn:hover{
+
+     text-decoration: underline !important;
+     color: #7c10c9;
+
+  }
+
+  // ::ng-deep html[dir="ltr"] .pdfbtn{
+  //   margin-left: 10px;
+  // }
+  ::ng-deep html[dir="ltr"] .cui-ctl-iconContainer14{
+    transform: scale(-1) !important;
+  }
 
 
 //mohamed-edit
@@ -1568,13 +1582,17 @@ a{color: #207698!important;}
   height: 250px !important;
 }
 
+@media screen and (max-width:768px){
+  ::ng-deep ds-root main{
+    margin-top: 141px !important;
+   
+ }
 
-::ng-deep .badge-secondary {
-  color: #fff;
-  background-color: #3992a4 !important;
+//  ::ng-deep .container{
+//   overflow-x: hidden !important;
+//  }
+
 }
-
-
 ::ng-deep  ds-search-navbar{
   @media screen and (max-width: 550px){
 form > input{
@@ -1591,29 +1609,18 @@ form > input{
 }
 
 
+::ng-deep  {
+  @media screen and (max-width: 650px){
 
+    .ribbon-1{
+      transform: translate(0) rotate(0) !important;
+      width: 100%;
+      text-align: center !important;
 
-::ng-deep ds-collection-form {
-select{
-  padding-top: 2px !important;
-}
-}
-
-
-::ng-deep ds-search-navbar .submit-icon
- {
-  color: #fff !important;
+    }
+  }
 }
 
-
-::ng-deep ds-log-in a{
-  color: #ab986c!important;
-}
-
-
-::ng-deep li.breadcrumb-item.active {
-  color: #ab986c!important;
-}
 
 
 ::ng-deep ds-search-facet-option{
@@ -1626,82 +1633,62 @@ select{
 // orcid image
 
 ::ng-deep ds-metadata-values{
-  img{
-    width: 25px !important;
-  }
-}
-
-::ng-deep html[dir="rtl"] ds-metadata-values img{
-  margin-right: 3px;
-}
-
-::ng-deep html[dir="ltr"] ds-metadata-values img{
-  margin-left: 3px;
-  margin-top: -5px;
-}
-
-  // orcid image
-
-::ng-deep ds-metadata-values{
 a{
-  img{
-    width: 25px !important;
-  }
+img{
+  width: 25px !important;
+}
 }
 
 }
 
 ::ng-deep html[dir="rtl"] ds-metadata-values {
-  a{
-    img{
-      margin-right: 3px;
-    }
+a{
+  img{
+    margin-right: 3px;
   }
+}
 }
 
 
 
 ::ng-deep html[dir="ltr"] ds-metadata-values {
-  a{
-    img{
-      margin-left: 3px;
-      margin-top: -5px;
-    }
+a{
+  img{
+    margin-left: 3px;
+    margin-top: -5px;
   }
+}
 }
 
 
 ::ng-deep {
-  @media screen and (max-width: 780px) {
+@media screen and (max-width: 780px) {
 .ngx-gallery-preview-top{
-  top: 40px !important;
+top: 40px !important;
 }
-}
-ds-dynamic-onebox .fa-circle {
-  opacity: 0 !important;
-  visibility: hidden !important;
 }
 }
 
 ::ng-deep html[dir="rtl"] ds-vocabulary-treeview label{
-  gap: 7px !important;
+gap: 7px !important;
 }
 
 ::ng-deep html[dir="rtl"] ds-vocabulary-treeview {
-   .btn-outline-primary{
-    border-top-left-radius: 0 !important;
-    border-bottom-left-radius: 0 !important;
-  }
-  .btn .btn-outline-secondary{
-    border-top-left-radius: 5px !important;
-    border-bottom-left-radius: 5px !important;
-  }
+ .btn-outline-primary{
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+.btn .btn-outline-secondary{
+  border-top-left-radius: 5px !important;
+  border-bottom-left-radius: 5px !important;
+}
 }
 
 ::ng-deep  .archived-items-lead{
-  background-color: #ab986c !important;
-  color: #FFF !important;
+background-color: #2666ab !important;
+color: #FFF !important;
 }
+// kware end edit -- issue.7.6.001
 // kware end edit -- issue.7.6.001
 
 ::ng-deep ds-item-list-element{
@@ -1905,13 +1892,13 @@ ds-top-section .label_dage{
 
   ::ng-deep{
     .scrollTop:hover {
-      background-color: #6fbfcf;
-      filter: drop-shadow(3px 0px 6px darkcyan);
+      background-color: #920fed;
+      filter: drop-shadow(3px 0px 6px #920fed);
     }
     
     .sidebar-top-level-items > ul > li {
-      border-bottom: 2px solid #6f6f6f;
-      background-color: #424242;
+      border-bottom: 1px solid #FFF;
+      background-color: #FFF;
   }
   }
 
@@ -1962,23 +1949,23 @@ ds-top-section .label_dage{
 
 
   .nav-item.nav-link.d-flex.flex-row.flex-nowrap:hover {
-    background-color: #ab986c;
+    background-color:  #2666ab;
   }
   
   .sidebar-section.ng-trigger.ng-trigger-bgColor:hover {
-    background-color: #ab986c !important;
+    background-color:  #2666ab !important;
   }
   
   ::ng-deep ds-admin-sidebar{
     .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
-      background-color: #ab986c !important;
+      background-color:  #2666ab !important;
   
       ds-onclick-menu-item a{
-        background-color: #ab986c !important; 
+        background-color:  #2666ab !important; 
        }
        
        ds-link-menu-item a{
-         background-color: #ab986c !important; 
+         background-color:  #2666ab !important; 
        }
   } 
   
@@ -1986,8 +1973,8 @@ ds-top-section .label_dage{
   }
   ::ng-deep ds-search-form{
     .btn-primary {
-      background-color: #3992a4 !important;
-      border-color: #3992a4 !important;
+      background-color:  #2666ab !important;
+      border-color:  #2666ab !important;
   }
   }
 
@@ -2021,7 +2008,7 @@ ds-top-section .label_dage{
       box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 6px 0px !important;
       z-index: 99;
       position: absolute;
-      transform: translate(-82px, 44px) !important;
+      // transform: translate(-82px, 44px) !important;
       border-radius: 5px;
       border: 2px solid #eee;
     }
@@ -2029,7 +2016,7 @@ ds-top-section .label_dage{
   
   ::ng-deep html[dir="ltr"]{
     ds-expandable-navbar-section  .dropdown-menu{
-      transform: translate(2px, 44px) !important;
+      // transform: translate(2px, 44px) !important;
   
     }
   }
@@ -2051,7 +2038,15 @@ ds-top-section .label_dage{
     margin-top: 4px !important;
     border: 2px solid #b4b1b1 !important;
     border-bottom: none !important;
-    background-color: #ab986c !important;
+    background-color:  #2666ab !important;
+  }
+
+  @media (max-width: 768px){
+    .scrolledY  .dropdown-menu{
+ 
+      transform: translate(-85px, 44px) !important;
+     
+    }
   }
   
   .scrolledY  .dropdown-menu{
@@ -2061,17 +2056,20 @@ ds-top-section .label_dage{
       //  box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 6px 0px !important;
       z-index: 999 !important;
       position: absolute;
-      transform: translate(-85px, 44px) !important;
+      // transform: translate(-85px, 44px) !important;
       border-radius: 5px;
       border: 2px solid #b4b1b1 !important;
     }
   }
   
-  ::ng-deep html[dir="ltr"]{
-    .scrolledY  .dropdown-menu{
-      transform: translate(0px, 44px) !important;
-  
+  @media (max-width: 768px){
+    ::ng-deep html[dir="ltr"]{
+      .scrolledY  .dropdown-menu{
+        transform: translate(0px, 44px) !important;
+    
+      }
     }
+
   }
   
   ::ng-deep html[dir="rtl"] ds-item-search-result-list-element-submission{
@@ -2100,18 +2098,18 @@ ds-top-section .label_dage{
     }
 
     .browse-category-link-circle-selected{
-      background-color: #ab986c !important;
+      background-color:  #2666ab !important;
       border-radius: 50%;
-      border: 1px solid #ab986c !important;
+      border: 1px solid  #2666ab !important;
     }
 
     .browse-category-link-circle{
-      border: 1px solid #ab986c !important;
+      border: 1px solid  #2666ab !important;
     }
 
     .browse-category-link-selected{
-      background-color: #3992a4 !important;
-    border-color: #3992a4 !important;
+      background-color:  #2666ab !important;
+    border-color:  #2666ab !important;
     color: #FFF !important;
     }
 
@@ -2331,7 +2329,7 @@ ds-listable-object-component-loader .card-title {
       border-radius: 15px;
   }
   .badge-secondary {
-      background-color: #207698 !important;
+    background-color: #495057 ;
   }
   
   
@@ -2353,8 +2351,8 @@ ds-listable-object-component-loader .card-title {
   .card .badge {
     display: inline-block;
     // padding: .6em .5em;
-    font-size: 75%;
-    font-weight: 700;
+    font-size: 70%;
+    font-weight: 400 !important;
     line-height: 1;
     text-align: center;
     white-space: nowrap;
@@ -2397,7 +2395,7 @@ ds-listable-object-component-loader .card-title {
   ::ng-deep html[dir="rtl"] {
     .fixed-height{
       position: relative;
-      height: 310px !important;
+      height: 330px !important;
   }
   
   .fixed-bottom-content{
@@ -2409,7 +2407,7 @@ ds-listable-object-component-loader .card-title {
   ::ng-deep ds-top-section{
     .fixed-height{
       position: relative;
-      height: 290px !important;
+      height: 310px !important;
     }
     
     .fixed-bottom{
@@ -2436,7 +2434,7 @@ ds-listable-object-component-loader .card-title {
   ::ng-deep ds-top-section{
     .fixed-height{
       position: relative;
-      height: 290px !important;
+      height: 310px !important;
     }
     
     .fixed-bottom{
@@ -2503,7 +2501,7 @@ ds-listable-object-component-loader .card-title {
 
 
   ::ng-deep .browse-category-link-selected .badge-secondary{
-    color: #207698 !important;
+    color:  #2666ab !important;
     background-color: #FFF !important;
   
   }
@@ -2536,7 +2534,7 @@ ds-listable-object-component-loader .card-title {
     }
 
     ::-webkit-scrollbar-thumb {
-      background: #3992a4; 
+      background:  #2666ab; 
       border-radius: 10px;
     }
   }
@@ -2566,7 +2564,157 @@ ds-listable-object-component-loader .card-title {
 
 
   ::ng-deep .card:hover{
-    border: #3992a4 1.5px solid;
+    border:  #2666ab 1.5px solid;
+  }
+
+  ::ng-deep{
+    .card small{
+       background-color:rgb(106, 163, 213) !important ;
+     } 
+     ds-listable-object-component-loader small{
+       background-color:rgb(106, 163, 213) !important ;
+     }
+   }
+   ::ng-deep{
+    .card small{
+       background-color:transparent !important ;
+       color: #6c757d !important;
+     } 
+   
+   }
+
+
+
+   ::ng-deep html[dir="rtl"] {
+    ds-browse-categories  ds-sub-org-unit-search-result-grid-element{
+
+      .fixed-height{
+        position: relative;
+        height: 350px !important;
+    }
+    
+    .fixed-bottom-content{
+        position: absolute;
+        bottom: .5rem;
+        width: 100%;
+    }
+    }
+
+
+  }
+  
+  ::ng-deep html[dir="ltr"] {
+    ds-browse-categories  ds-sub-org-unit-search-result-grid-element{
+      .fixed-height{
+        position: relative;
+        height: 360px !important;
+    }
+    
+    .fixed-bottom-content{
+        position: absolute;
+        bottom: .5rem;
+        width: 100%;
+    }
+    }
+
+
+
+
+  }
+
+  ::ng-deep{
+    ds-search-filters .d-block{
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+  }
+  ::ng-deep html[dir="ltr"] {
+    ds-footer img {
+      margin-right: 0px !important;
+    }
+  }
+ 
+  ::ng-deep html[dir="rtl"] {
+    .recent-head{
+     margin-right: 30px;
+    }
+   }
+   ::ng-deep html[dir="ltr"] {
+    .recent-head{
+     margin-left: 30px;
+    }
+   }
+
+   .badge-info {
+    background-color: lighten( #2666ab, 15%) !important;
+  }
+
+
+  ::ng-deep .browse-category-link-selected .badge-secondary{
+    color:  #2666ab !important;
+    background-color: #FFF !important;
+  
+  }
+
+  ::ng-deep{
+    .card .card-title{
+      font-weight: bold;
+    }
+    .card .badge{
+      font-weight: 500;
+    }
+  
+  }
+
+
+
+  ::ng-deep{
+    .scroll {
+      display: block;
+      padding: 5px;
+      margin-top: 5px;
+      width: 100%;
+      height: 100px;
+      overflow-y: scroll;
+  }
+
+  .card{
+    ::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background:  #2666ab; 
+      border-radius: 10px;
+    }
+  }
+  // ds-item-search-result-grid-element{
+  //   .collapseButton{
+  //   visibility: hidden;
+  //   position: absolute;
+  //   }
+  //   .expandButton{
+  //     visibility: hidden;
+  //     position: absolute;
+  //   }
+  // }
+
+  }
+
+
+  ::ng-deep{
+    ds-listable-object-component-loader .card{
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+      &:hover{
+          transform: scale(1.04)
+      }
+      transition: .5s;
+    }
+  }
+
+
+  ::ng-deep .card:hover{
+    border:  #2666ab 1.5px solid;
   }
 
   ::ng-deep{
@@ -2658,7 +2806,7 @@ ds-listable-object-component-loader .card-title {
   }
   ::ng-deep html[dir="ltr"] {
     ds-footer img {
-      margin-right: -30px !important;
+      margin-right: 0px !important;
     }
   }
  
@@ -2732,3 +2880,318 @@ ds-listable-object-component-loader .card-title {
       }
     }
    }
+
+   ::ng-deep html[dir="ltr"] {
+    .category-link .badge {
+      transition: none;
+      border: 1px solid  #2666ab;
+      font-size: 0.85rem !important;
+  }
+  .category-link {
+      color: var(--text-color);
+      font-weight: 700;
+      font-size: 1.1rem !important;
+      cursor: pointer;
+      text-align: center;
+  } 
+  .category-link-selected{
+    font-size: 1.1rem !important;
+    text-align: center;
+  }
+   }
+
+
+   ::ng-deep html[dir="rtl"]{
+    ds-process-overview .mr-2{
+      margin-left: 0.5rem !important;
+    }
+
+    ds-process-detail-field .mr-2{
+      margin-left: 0.5rem !important;
+    }
+   }
+
+   @media screen and (max-width: 550px){
+    ::ng-deep  ds-search-navbar form > input{
+  margin-top: 30px !important;
+    margin-right: 10px !important;
+    max-width: 210px ;
+}
+::ng-deep  ds-search-navbar .dropdown-menu-right {
+  left: 0 !important;
+  right: 0 !important;
+}
+
+  }
+
+
+
+  @media screen and (max-width: 520px){
+    ::ng-deep ds-search-form input{
+      width: 50% !important;
+      border-top-right-radius: 0.25rem !important;
+     border-bottom-right-radius: 0.25rem !important;
+     margin-top: 7px;
+    }
+    ::ng-deep ds-search-form  .input-group-prepend{
+      width: 50%;
+
+    }
+    ::ng-deep ds-search-form  button{
+      width: 100% !important;
+      max-width: 100% !important;
+
+    }
+    ::ng-deep ds-search-form span{
+      margin-top: 7px;
+    }
+    ::ng-deep ds-search-form select{
+      border-right: 1px solid !important;
+        width: 50% !important;
+        margin-right: -1px !important;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+margin-left: -1px;
+position: relative;
+    flex: 1 1 auto;
+    width: 1%;
+    min-width: 0;
+    margin-bottom: 0;
+display: block;
+    width: 100%;
+    height:47px;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    // color: #495057;
+    // background-color: #fff;
+    // background-clip: padding-box;
+    // border: 1px solid #ced4da;
+    // border-radius: 0.25rem;
+    // box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    // transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      }
+     
+    }
+
+    ::ng-deep html[dir="rtl"]{
+      ds-dynamic-scrollable-dropdown input{
+        padding-right: 5px !important
+      }
+    }
+
+    ::ng-deep html[dir="rtl"]{
+      ds-access-control-form-container .mr-3{
+        margin-left: 20px !important
+      }
+    }
+
+
+    // ::ng-deep {
+    //   .dropdown-menu{
+    //     z-index:  100000000000000000 !important;
+    //   }
+
+    //   nav{
+    //     -webkit-transform: translate3d(0,0,1px) !important;
+    //     transform: translate3d(0,0,1px)!important;
+    //   }
+    // }
+
+
+    @media screen and (max-width: 755px){
+      ::ng-deep {
+        .dropdown-menu{
+          z-index:  100000000000000000 !important;
+        }
+      }
+    }
+
+    ::ng-deep ds-tabbed-related-entities-search{
+      ds-page-with-sidebar .container {
+        overflow-x: hidden !important;
+      }
+      .mt-4 {
+        overflow-x: hidden !important;
+      }
+    }
+
+
+
+    ::ng-deep .modal {
+      -webkit-transform: translate3d(0,0,3px) !important;
+       transform: translate3d(0,0,3px)!important;
+       z-index: 100000000000000000000000000000000000000000000 !important;
+    }
+
+
+
+    ::ng-deep{
+      @media screen and (min-width: 876px){
+        .d-m-block {
+         display: block !important;
+     }
+    
+     .d-m-none {
+      display: none !important;
+    }
+     }
+    }
+
+    ::ng-deep html[dir="rtl"] ngb-datepicker-navigation {
+      button{
+        transform: scale(-1);
+      }
+      .ngb-dp-navigation-select {
+        
+        flex: 1 1 12rem !important;
+    }
+    }
+
+
+    // ::ng-deep html[dir="rtl"] ngb-datepicker-month{
+    //   direction: ltr !important;
+
+    // }
+
+    // ::ng-deep html[dir="rtl"] ngb-datepicker{
+    //   .ngb-dp-months{
+    //     direction: ltr !important;
+    //   }
+    // }
+
+    ::ng-deep html[dir="rtl"] {
+      .ngb-dp-day, .ngb-dp-weekday, .ngb-dp-week-number {
+        width: 3.4rem ; 
+      }
+      .form-control{
+        padding-bottom: 0 !important;
+      }
+    }
+
+    ::ng-deep{
+      .ngx-gallery-image-size-contain[_ngcontent-dspace-angular-c410] .ngx-gallery-image[_ngcontent-dspace-angular-c410]{
+        background-size: cover !important;
+      }
+      ds-listable-object-component-loader{
+        .col-9{
+          overflow: hidden !important;
+        }
+      }
+      @media screen and (max-width: 755px){
+
+
+        
+        ds-home-page{
+          .container{
+            overflow-x: hidden !important;
+           }
+        }
+        ds-footer{
+          .container{
+            overflow-x: hidden !important;
+           }
+        }
+  
+        ds-browse-categories{
+          .container{
+            overflow-x: visible !important;
+           }
+        }
+      }
+
+
+      
+    }
+    
+    // ::ng-deep ds-help-links .dropdown-menu {
+    //   -webkit-transform: translate3d(0,0,4px) !important;
+    //   transform: translate3d(0,0,4px)!important;  
+    //   z-index: 10000000000000000000000000000 !important;
+    // }
+
+    // ::ng-deep ds-header .ribbon-1{
+    //   position: absolute !important;
+    //   visibility: hidden !important;
+    //   display: none !important;
+    // }
+
+    
+    // ::ng-deep html[dir="rtl"] {
+    //   select{
+    //     -webkit-appearance: none !important;  /*For Chrome*/  
+    //      -moz-appearance: none;/*For Mozilla*/    
+    //      appearance: none;   
+    //      direction: rtl;
+    //   }
+    //   .selectDropDown{
+    //     -webkit-appearance: none !important;  /*For Chrome*/  
+    //      -moz-appearance: none;/*For Mozilla*/    
+    //      appearance: none;   
+    //      direction: rtl;
+    //   }
+    // }
+
+    ::ng-deep{
+      ds-metadata-representation-loader{
+        a{
+          color: #207698 !important;
+        }
+      }
+      .card h4{
+        color:  #2666ab !important;
+      }
+      .item-list-title{
+        color:  #2666ab !important;
+      }
+
+      ds-admin-sidebar{
+        z-index: 99999 !important;
+      }
+
+      ds-navbar{
+        .navbar-nav{
+          justify-content: center !important;
+        }
+      }
+    }
+
+
+    ::ng-deep{
+      ds-metadata-representation-loader{
+        a{
+          color: #207698 !important;
+        }
+      }
+
+      ds-metadata-field-wrapper h5{
+        color: #212529 !important;
+      }
+      ds-item-page-title-field h2{
+        color: #212529 !important;
+      }
+      .btn-dark{
+        background-color: #212529 !important;
+      }
+
+      ds-browse-categories .browse-category-link-circle-selected{
+        background-color: #333 !important;
+        border: 1px solid #333 !important;
+      }
+
+      ds-browse-categories .browse-category-link-circle{
+        border: 1px solid #333 !important;
+      }
+   
+    }
+
+    ::ng-deep{
+      ds-categories {
+        .container{
+          max-width:1140px !important;
+        }
+      }
+    }
