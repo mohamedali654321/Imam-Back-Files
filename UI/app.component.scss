@@ -3195,3 +3195,14 @@ display: block;
         }
       }
     }
+
+    ::ng-deep html[dir="rtl"] ds-item-files-menu{
+      fa-angle-left{
+        transform: scale(-1);
+      }
+
+      fa-angle-right{
+        transform: scale(-1);
+      }
+    }
+   
