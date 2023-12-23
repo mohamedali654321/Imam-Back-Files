@@ -40,7 +40,7 @@
         <span *ngIf="dso.firstMetadataValue('dc.date.issuedhijri')" class="item-list-date" [innerHTML]="firstMetadataValue('dc.date.issuedhijri')"></span> -->
               <span *ngFor="let author of authors;let last=last;">
                 <!-- <span ><i class="fa-regular fa-user">&nbsp;</i>{{convertComma((author | kwareTranslate))}}</span> -->
-                <span [attr.title]="'item.search.author' | translate" ><i class="fa-regular fa-user">&nbsp;</i>{{convertComma(((author?.split(",")[0] | kwareTranslate) + ',' +  (author?.split(",")[1] | kwareTranslate)))}}</span>
+                <span [attr.title]="'item.search.author' | translate" ><i class="fa-regular fa-user">&nbsp;</i>{{convertComma((author | kwareTranslate))}}</span>
 
                 <span *ngIf="!last">&nbsp;&nbsp;</span>
             </span>
@@ -53,7 +53,7 @@
             <p class="item-authors card-text text-muted">
               <span *ngFor="let advisor of dso.allMetadataValues('dc.contributor.advisor');let last=last;">
                 <!-- <span ><i class="fa-regular fa-user">&nbsp;</i>{{convertComma((author | kwareTranslate))}}</span> -->
-                <span [attr.title]="'item.search.advisor' | translate"><i class="fa-solid fa-user-tie">&nbsp;</i>{{convertComma(((advisor?.split(",")[0] | kwareTranslate) + ',' +  (advisor?.split(",")[1] | kwareTranslate)))}}</span>
+                <span [attr.title]="'item.search.advisor' | translate"><i class="fa-solid fa-user-tie">&nbsp;</i>{{convertComma((advisor | kwareTranslate))}}</span>
   
                 <span *ngIf="!last">&nbsp;&nbsp;</span>
             </span>
