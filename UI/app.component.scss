@@ -3196,13 +3196,12 @@ display: block;
       }
     }
 
-    ::ng-deep html[dir="rtl"] ds-item-files-menu{
-      fa-angle-left{
-        transform: scale(-1);
+    ::ng-deep html[dir="ltr"] ds-item-files-menu{
+      .fa-angle-left{
+        transform: scale(-1) !important;
       }
 
-      fa-angle-right{
-        transform: scale(-1);
+      .fa-angle-right{
+        transform: scale(-1) !important;
       }
     }
-   
